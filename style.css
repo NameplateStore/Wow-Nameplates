@@ -1469,6 +1469,28 @@ textarea:focus {
 		width: 100%;
 		padding: 0 60px 0 33px;
 }
+
+#suggestions {
+	position: absolute;
+	background: #f0f0f0;
+	list-style: none;
+	padding: 0;
+	width: 200px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	display: none; /* Initially hide the suggestion list */
+	z-index: 9999; /* Ensure the list appears above other elements */
+  }
+  
+  #suggestions li {
+	padding: 5px;
+	cursor: pointer;
+  }
+  
+  #suggestions li:hover {
+	background: #ccc;
+  }
+  
 /*Header Middle Right*/
 .header-middle-right {
 		display: flex;
