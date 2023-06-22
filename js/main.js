@@ -535,6 +535,52 @@
 
 
   /*----------------------------------------*/
+  /* 27. Pricing update
+/*----------------------------------------*/
+
+// Get the select element
+
+function updatePrice() {
+  // Get the select element
+  const selectElement = document.getElementById('dimiensions');
+
+  // Get the selected option value
+  const selectedOption = selectElement.value;
+  const [firstValue, secondValue] = selectedOption.split('*');
+
+  // Get the selected option title
+  const selectedTitle = selectElement.options[selectElement.selectedIndex].getAttribute('title');
+
+  // Calculate the price based on the selected option
+  const priceMultiplier = 15;
+  const price = parseFloat(firstValue) * parseFloat(secondValue) * priceMultiplier;
+
+  // Update the price
+  const priceElement = document.getElementById('price');
+  priceElement.textContent = `${price.toFixed(2)}`;
+
+  // Update the default option title if needed
+  const defaultPriceElement = document.querySelector('.nice-select .current');
+
+}
+
+// Call the updatePrice function initially to set the initial price
+updatePrice();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*----------------------------------------*/
   /* 27. SearchBox
 /*----------------------------------------*/
 
