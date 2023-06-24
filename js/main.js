@@ -605,10 +605,40 @@ updatePrice();
 /*----------------------------------------*/
 
 
+// const searchBox = document.getElementById('search-box');
+//     const searchResults = document.getElementById('search-results');
+
+//     searchBox.addEventListener('input', function() {
+//       const searchTerm = searchBox.value.toLowerCase();
+//       const headings = document.querySelectorAll('h1, h2, h3, h4');
+
+//       let results = '';
+
+//       headings.forEach(function(heading) {
+//         const headingText = heading.textContent.toLowerCase();
+
+//         if (headingText.includes(searchTerm)) {
+//           results += '<p>' + headingText + '</p>';
+//         }
+//       });
+
+//       if (searchTerm) {
+//         searchResults.innerHTML = results.length ? results : 'No results found.';
+//       } else {
+//         searchResults.innerHTML = '';
+//       }
+//     });
+// // Assuming you have a search input field with the ID "search-input"
+// var searchInput = document.getElementById('search-box');
 
 
-
-
+// searchInput.addEventListener('input', function() {
+//   if (searchInput.value === "") {
+//     searchResults.style.display = "none";
+//   } else {
+//     searchResults.style.display = "block";
+//   }
+// });
 /*----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------> The End <-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/

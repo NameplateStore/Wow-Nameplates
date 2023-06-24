@@ -7,7 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>WOWNameplates</title>
-    <meta name="description" content="WowNameplates is the leading provider of custom nameplates in Noida. We offer a wide variety of nameplates to choose from, including metal nameplates, acrylic nameplates, and wood nameplates. We also offer a variety of customization options, so you can create a nameplate that is perfect for your needs.">
+    <meta name="description"
+        content="WowNameplates is the leading provider of custom nameplates in Noida. We offer a wide variety of nameplates to choose from, including metal nameplates, acrylic nameplates, and wood nameplates. We also offer a variety of customization options, so you can create a nameplate that is perfect for your needs.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="">
@@ -105,11 +106,12 @@
                         <!-- Begin Header Middle Right Area -->
                         <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
                             <!-- Begin Header Middle Searchbox Area -->
-                            <form action="#" class="hm-searchbox"> 
+                            <form action="#" class="hm-searchbox">
                                 <select class="nice-select select-search-category">
                                     <option value="0">All</option>
                                 </select>
-                                <input type="text" placeholder="Enter your search key ...">
+                                <input type="text" placeholder="Enter your search key ..." id="search-box">
+
                                 <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
                             </form>
                             <!-- Header Middle Searchbox Area End Here -->
@@ -137,6 +139,7 @@
                             </div>
                             <!-- Header Middle Right Area End Here -->
                         </div>
+                        <!-- <div id="search-results"></div> -->
                         <!-- Header Middle Right Area End Here -->
                     </div>
                 </div>
@@ -151,106 +154,162 @@
                             <div class="hb-menu">
                                 <nav>
                                     <ul>
-                                        <li class="dropdown-holder"><a href="index.html">Home</a></li>
-                                        <li class="megamenu-holder"><a href="./pages/shop-4-column.html">Nameplate Category</a>
+                                        <li class="dropdown-holder"><a href="/">Home</a></li>
+                                        <li class="megamenu-holder"><a href="./pages/shop.html">Nameplate
+                                                Category</a>
                                             <ul class="megamenu hb-megamenu">
                                                 <li><a href="./pages/shop-left-sidebar.html">Acrylic Nameplates</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Crystal Clear Elegance</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Opulent Acrylic Accents</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Luminescent Luxuria</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Deluxe Diamond-Cut Designs</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Gilded Acrylic Glamour</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Radiant Reflections</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Prismatic Prestige</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Crystal Clear
+                                                                Elegance</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Opulent Acrylic
+                                                                Accents</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Luminescent
+                                                                Luxuria</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Deluxe Diamond-Cut
+                                                                Designs</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Gilded Acrylic
+                                                                Glamour</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Radiant
+                                                                Reflections</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Prismatic
+                                                                Prestige</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="./pages/shop-left-sidebar.html">Led Nameplates</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Luminous Luxury</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Radiant Resplendence</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Illuminated Elegance</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Dazzling Digital Displays</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Glowing Glamour</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Futuristic LED Fantasies</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Opulent Lighted Labels</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Luminous Luxury</a>
+                                                        </li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Radiant
+                                                                Resplendence</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Illuminated
+                                                                Elegance</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Dazzling Digital
+                                                                Displays</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Glowing Glamour</a>
+                                                        </li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Futuristic LED
+                                                                Fantasies</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Opulent Lighted
+                                                                Labels</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="./pages/shop-left-sidebar.html">Wooden Textured Nameplates</a>
+                                                <li><a href="./pages/shop-left-sidebar.html">Wooden Textured
+                                                        Nameplates</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Majestic Mahogany Monikers Nameplates</a>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Majestic Mahogany
+                                                                Monikers Nameplates</a>
                                                         </li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Exquisite Ebony Engravings Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Regal Rosewood Labels Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Luxe Oak Leaflets Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Enchanted Emblems Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Royal Teak Tags Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Exquisite Ebony
+                                                                Engravings Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Regal Rosewood
+                                                                Labels Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Luxe Oak Leaflets
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Enchanted Emblems
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Royal Teak Tags
+                                                                Nameplates</a></li>
                                                     </ul>
                                                 </li>
 
                                             </ul>
                                         </li>
-                                        <li class="megamenu-holder"><a href="./pages/shop-4-column.html">Premium Nameplates</a>
+                                        <li class="megamenu-holder"><a href="./pages/shop.html">Premium
+                                                Nameplates</a>
                                             <ul class="megamenu hb-megamenu">
                                                 <li><a href="./pages/shop-left-sidebar.html">Regal Reflections</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Royal Crests</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Elegant Engravings</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Ornate Filigree</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Enchanting Calligraphy</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Graceful Flourishes</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Timeless Elegance</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Classic Borders</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Royal Crests</a>
+                                                        </li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Elegant
+                                                                Engravings</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Ornate Filigree</a>
+                                                        </li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Enchanting
+                                                                Calligraphy</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Graceful
+                                                                Flourishes</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Timeless
+                                                                Elegance</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Classic Borders</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="./pages/shop-left-sidebar.html">Opulent Emblems</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Exquisite Heraldry</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Lavish Medallions</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Dazzling Gemstones</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Elaborate Motifs</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Regal Coats of Arms</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Gilded Accents</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Exquisite
+                                                                Heraldry</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Lavish
+                                                                Medallions</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Dazzling
+                                                                Gemstones</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Elaborate
+                                                                Motifs</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Regal Coats of
+                                                                Arms</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Gilded Accents</a>
+                                                        </li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="./pages/shop-left-sidebar.html">Majestic Monikers</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Noble Titles</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Royal Monograms</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Prestigious Monikers</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Grand Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Majestic Initials</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Noble Titles</a>
+                                                        </li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Royal Monograms</a>
+                                                        </li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Prestigious
+                                                                Monikers</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Grand
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Majestic
+                                                                Initials</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="megamenu-holder"><a href="./pages/shop-4-column.html">Category</a>
+                                        <li class="megamenu-holder"><a href="./pages/shop.html">Category</a>
                                             <ul class="megamenu hb-megamenu">
                                                 <li><a href="./pages/shop-left-sidebar.html">Personalized Nameplates</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Name-specific Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Custom Design Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Monogram Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Signature Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Special Occasion Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Name-specific
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Custom Design
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Monogram
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Signature
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Special Occasion
+                                                                Nameplates</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="./pages/shop-left-sidebar.html">Professional Nameplates</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Corporate Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Medical Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Academic Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Hospitality Nameplates</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Government Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Corporate
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Medical
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Academic
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Hospitality
+                                                                Nameplates</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Government
+                                                                Nameplates</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="./pages/shop-left-sidebar.html">Metal Nameplates</a>
                                                     <ul>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Gilded Steel Monikers Nameplate</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Opulent Brass Badges Nameplate</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Platinum Prestige Plates Nameplate</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Silver Scrolls Nameplate</a></li>
-                                                        <li><a href="./pages/shop-left-sidebar.html">Golden Emblematic Engravings Nameplate</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Gilded Steel
+                                                                Monikers Nameplate</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Opulent Brass
+                                                                Badges Nameplate</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Platinum Prestige
+                                                                Plates Nameplate</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Silver Scrolls
+                                                                Nameplate</a></li>
+                                                        <li><a href="./pages/shop-left-sidebar.html">Golden Emblematic
+                                                                Engravings Nameplate</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -269,7 +328,11 @@
             <!-- Header Bottom Area End Here -->
             <!-- Begin Mobile Menu Area -->
             <div class="mobile-menu-area d-lg-none d-xl-none col-12">
-                <div class="container"><div class="row"><div class="mobile-menu"></div></div></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
             </div>
             <!-- Mobile Menu Area End Here -->
         </header>
@@ -288,7 +351,7 @@
                                     <div class="slider-content">
                                         <h5>Sale Offer <span>-20% Off</span> This Week</h5>
                                         <h2>Crystal Clear Elegance</h2>
-                                        <h3>Starting at <span>₹1600.00</span></h3>
+                                        <h3>Starting at <span>₹2,999.00</span></h3>
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="./pages/shop-left-sidebar.html">Shopping Now</a>
                                         </div>
@@ -301,7 +364,7 @@
                                     <div class="slider-content">
                                         <h5>Sale Offer <span>Every Friday</span> of the Week</h5>
                                         <h2>Enhance Your Identity with Custom Nameplates</h2>
-                                        <h3>Now at Discounted Prices <span> ₹1600.00</span></h3>
+                                        <h3>Now at Discounted Prices <span> ₹2,999.00</span></h3>
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="./pages/shop-left-sidebar.html">Shopping Now</a>
                                         </div>
@@ -314,7 +377,7 @@
                                     <div class="slider-content">
                                         <h5>Sale Offer <span>-10% Off</span> This Week</h5>
                                         <h2>Platinum Prestige Plates Nameplate</h2>
-                                        <h3>Starting at <span>₹1999.00</span></h3>
+                                        <h3>Starting at <span>₹2,999.00</span></h3>
                                         <div class="default-btn slide-btn">
                                             <a class="links" href="./pages/shop-left-sidebar.html">Shopping Now</a>
                                         </div>
@@ -328,10 +391,12 @@
                     <!-- Begin Li Banner Area -->
                     <div class="col-lg-4 col-md-4 text-center pt-xs-30">
                         <div class="li-banner">
-                            <a href="#"><img src="images/banner/1_1.jpg" alt=""></a>
+                            <a href="./pages/shop.html"><img src="images/banner/1_1.jpg"
+                                    alt="Get 10% off on all Nameplates"></a>
                         </div>
                         <div class="li-banner mt-15 mt-sm-30 mt-xs-30">
-                            <a href="#"><img src="images/banner/1_2.jpg" alt=""></a>
+                            <a href="./pages/shop-left-sidebar.html"><img src="images/banner/1_2.jpg"
+                                    alt="Best Nameplate In Noida"></a>
                         </div>
                     </div>
                     <!-- Li Banner Area End Here -->
@@ -346,9 +411,11 @@
                     <div class="col-lg-12">
                         <div class="li-product-tab">
                             <ul class="nav li-product-menu">
-                                <li><a class="active" data-toggle="tab" href="#li-new-product"><span>New Arrival</span></a></li>
+                                <li><a class="active" data-toggle="tab" href="#li-new-product"><span>New
+                                            Arrival</span></a></li>
                                 <li><a data-toggle="tab" href="#li-bestseller-product"><span>Bestseller</span></a></li>
-                                <li><a data-toggle="tab" href="#li-featured-product"><span>Featured Products</span></a></li>
+                                <li><a data-toggle="tab" href="#li-featured-product"><span>Featured Products</span></a>
+                                </li>
                             </ul>
                         </div>
                         <!-- Begin Li's Tab Menu Content Area -->
@@ -363,7 +430,8 @@
                                     <div class="single-product-wrap">
                                         <div class="product-image">
                                             <a href="./pages/products/single-product.html">
-                                                <img src="images/product/large-size/1.jpg" alt="Li's Product Image">
+                                                <img src="images/product/large-size/1.jpg"
+                                                    alt="Gleaming Gold Nameplate with Bold 3D Black Letters">
                                             </a>
                                             <span class="sticker">New</span>
                                         </div>
@@ -384,8 +452,8 @@
                                                     </div>
                                                 </div>
                                                 <h4>
-                                                    <a class="product_name"
-                                                        href="./pages/products/./pages/products/single-product.html">Gleaming Gold Nameplate with Bold 3D Black Letters
+                                                    <a class="product_name" href="./pages/products/single-product.html">
+                                                        Gleaming Gold Nameplate with Bold 3D Black Letters
                                                     </a>
                                                 </h4>
                                                 <div class="price-box">
@@ -394,9 +462,21 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#Gleaming-Gold-pNameplate"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li>
+                                                        <a class="links-details"
+                                                            href="./pages/products/single-product.html">
+                                                            <i class="fa fa-info"></i>
+                                                        </a>
+
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#Gleaming-Gold-pNameplate">
+                                                            <i class="fa fa-eye"></i>
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -416,7 +496,7 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">Name Arrival</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
@@ -428,22 +508,30 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4>
+                                                    <a class="product_name" href="./pages/products/single-product.html">
+                                                        Elegant Matte Black Nameplate with Engraved Golden Letters
+                                                    </a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price new-price-2">$71.80</span>
-                                                    <span class="old-price">$77.22</span>
-                                                    <span class="discount-percentage">-7%</span>
+                                                    <span class="new-price new-price-2">₹4,860</span>
+                                                    <span class="old-price">₹5,400</span>
+                                                    <span class="discount-percentage">-10%</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
                                                     <li>
-                                                        <a class="links-details" href="./pages/products/single-product.html">
-                                                             <i class="fa fa-info"></i>
+                                                        <a class="links-details"
+                                                            href="./pages/products/single-product.html">
+                                                            <i class="fa fa-info"></i>
                                                         </a>
                                                     </li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -455,7 +543,8 @@
                                     <div class="single-product-wrap">
                                         <div class="product-image">
                                             <a href="./pages/products/single-product.html">
-                                                <img src="images/product/large-size/3.jpg" alt="Li's Product Image">
+                                                <img src="images/product/large-size/3.jpg"
+                                                    alt="Elegant Krishna Ji acrylic Nameplate for Home">
                                             </a>
                                             <span class="sticker">New</span>
                                         </div>
@@ -463,7 +552,7 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">New Arrival</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
@@ -475,16 +564,24 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate  001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Elegant Krishna Ji
+                                                        Nameplate: Matte Black Base with Golden Floral Design</a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price">$46.80</span>
+                                                    <span class="new-price">₹5,400</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -496,7 +593,8 @@
                                     <div class="single-product-wrap">
                                         <div class="product-image">
                                             <a href="./pages/products/single-product.html">
-                                                <img src="images/product/large-size/4.jpg" alt="Li's Product Image">
+                                                <img src="images/product/large-size/4.jpg"
+                                                    alt="Exquisite 3D Black Letter Nameplate for Home">
                                             </a>
                                             <span class="sticker">New</span>
                                         </div>
@@ -504,30 +602,39 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">New Arrival</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            <li><i class="fa fa-star-o"></i></li>
                                                             <li class="no-star"><i class="fa fa-star-o"></i></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate  001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Exquisite 3D Black
+                                                        Letter Nameplate: Golden Base with Floral Design and Planter
+                                                        Accent</a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price new-price-2">$71.80</span>
-                                                    <span class="old-price">$77.22</span>
-                                                    <span class="discount-percentage">-7%</span>
+                                                    <span class="new-price new-price-2">₹3,888</span>
+                                                    <span class="old-price">₹4,320</span>
+                                                    <span class="discount-percentage">-10%</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages//products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i  class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages//products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -547,28 +654,45 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">New Arrivals</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            <li><i class="fa fa-star-o"></i></li>
+                                                            <li><i class="fa fa-star-o"></i></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html"> Nameplate 001</a></h4>
+                                                <h4>
+                                                    <a class="product_name" href="./pages/products/single-product.html">
+                                                        Sleek 3D Black Letter Nameplate: White Glossy Base for a
+                                                        Timeless Elegance
+                                                    </a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price">$46.80</span>
+                                                    <span class="new-price">₹4,320</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active">
+                                                        <a href="https://wa.link/oy2jsj" target="_blank">Inquiry Now</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="links-details"
+                                                            href="./pages/products/single-product.html">
+                                                            <i class="fa fa-info"></i>
+                                                        </a>
+                                                        < </li>
+                                                    <li>
+                                                        <a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter">
+                                                            <i class="fa fa-eye"></i>
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -588,30 +712,37 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">New Arrivals</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            <li><i class="fa fa-star-o"></i></li>
                                                             <li class="no-star"><i class="fa fa-star-o"></i></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate  001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Luxurious Golden 3D Letter Nameplate: Black Base with Exquisite Designer Embellishments</a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price new-price-2">$71.80</span>
-                                                    <span class="old-price">$77.22</span>
-                                                    <span class="discount-percentage">-7%</span>
+                                                    <span class="new-price new-price-2">₹3,599</span>
+                                                    <span class="old-price">₹3,999</span>
+                                                    <span class="discount-percentage">-10%</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -629,7 +760,7 @@
                                     <div class="single-product-wrap">
                                         <div class="product-image">
                                             <a href="./pages/products/single-product.html">
-                                                <img src="images/product/large-size/12.jpg" alt="Li's Product Image">
+                                                <img src="images/product/large-size/7.jpg" alt="Stainless Steel Om Engraved Nameplate for Home">
                                             </a>
                                             <span class="sticker">New</span>
                                         </div>
@@ -637,7 +768,7 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">Best Seller</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
@@ -649,16 +780,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate  001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Stainless Steel Om Engraved Nameplate: Elegant Design with Black Engraved Letters</a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price">$46.80</span>
+                                                    <span class="new-price">₹4,500</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -670,7 +808,7 @@
                                     <div class="single-product-wrap">
                                         <div class="product-image">
                                             <a href="./pages/products/single-product.html">
-                                                <img src="images/product/large-size/11.jpg" alt="Li's Product Image">
+                                                <img src="images/product/large-size/3.jpg" alt="Elegant Krishna Ji Nameplate for Home">
                                             </a>
                                             <span class="sticker">New</span>
                                         </div>
@@ -678,7 +816,7 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">Best Seller</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
@@ -690,18 +828,25 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Elegant Krishna Ji Nameplate: Matte Black Base with Golden Floral Design</a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price new-price-2">$71.80</span>
-                                                    <span class="old-price">$77.22</span>
-                                                    <span class="discount-percentage">-7%</span>
+                                                    <span class="new-price new-price-2">₹5,400</span>
+                                                    <span class="old-price">₹6,000</span>
+                                                    <span class="discount-percentage">-9%</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -713,7 +858,7 @@
                                     <div class="single-product-wrap">
                                         <div class="product-image">
                                             <a href="./pages/products/single-product.html">
-                                                <img src="images/product/large-size/10.jpg" alt="Li's Product Image">
+                                                <img src="images/product/large-size/10.jpg" alt="Premium Designer Nameplate: Glossy White Base with Striking Black 3D Letters">
                                             </a>
                                             <span class="sticker">New</span>
                                         </div>
@@ -721,28 +866,35 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">Best Seller</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
                                                             <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                            <li><i class="fa fa-star-o"></i></li>
+                                                            <li><i class="fa fa-star-o"></i></li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Premium Designer Nameplate: Glossy White Base with Striking Black 3D Letters</a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price">$46.80</span>
+                                                    <span class="new-price">₹3,600</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -754,7 +906,7 @@
                                     <div class="single-product-wrap">
                                         <div class="product-image">
                                             <a href="./pages/products/single-product.html">
-                                                <img src="images/product/large-size/9.jpg" alt="Li's Product Image">
+                                                <img src="images/product/large-size/9.jpg" alt="Exquisite Premium Nameplate: Black Engraved Letters and Uniquely Patterned Design">
                                             </a>
                                             <span class="sticker">New</span>
                                         </div>
@@ -762,7 +914,7 @@
                                             <div class="product_desc_info">
                                                 <div class="product-review">
                                                     <h5 class="manufacturer">
-                                                        <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                        <a href="./pages/shop-left-sidebar.html">Best Seller</a>
                                                     </h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
@@ -774,18 +926,25 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Exquisite Premium Nameplate: Black Engraved Letters and Uniquely Patterned Design</a>
+                                                </h4>
                                                 <div class="price-box">
-                                                    <span class="new-price new-price-2">$71.80</span>
-                                                    <span class="old-price">$77.22</span>
-                                                    <span class="discount-percentage">-7%</span>
+                                                    <span class="new-price new-price-2">₹4,499</span>
+                                                    <span class="old-price">₹5,000</span>
+                                                    <span class="discount-percentage">-10%</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -817,16 +976,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -858,7 +1024,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -867,9 +1035,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -907,16 +1080,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -948,7 +1128,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -957,9 +1139,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -991,16 +1178,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1032,7 +1226,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -1041,9 +1237,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1075,16 +1276,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1095,13 +1303,15 @@
                                     <!-- single-product-wrap start -->
                                     <div class="single-product-wrap">
                                         <div class="product-image">
-                                            <a href="./pages/products/single-product.html"><img src="images/product/large-size/12.jpg" alt="Li's Product Image"></a>
+                                            <a href="./pages/products/single-product.html"><img
+                                                    src="images/product/large-size/12.jpg" alt="Li's Product Image"></a>
                                             <span class="sticker">New</span>
                                         </div>
                                         <div class="product_desc">
                                             <div class="product_desc_info">
                                                 <div class="product-review">
-                                                    <h5 class="manufacturer"><a href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
+                                                    <h5 class="manufacturer"><a
+                                                            href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
@@ -1112,7 +1322,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -1121,9 +1333,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1186,13 +1403,15 @@
                                     <!-- single-product-wrap start -->
                                     <div class="single-product-wrap">
                                         <div class="product-image">
-                                            <a href="./pages/products/single-product.html"><img src="images/product/large-size/1.jpg" alt="Li's Product Image"></a>
+                                            <a href="./pages/products/single-product.html"><img
+                                                    src="images/product/large-size/1.jpg" alt="Li's Product Image"></a>
                                             <span class="sticker">New</span>
                                         </div>
                                         <div class="product_desc">
                                             <div class="product_desc_info">
                                                 <div class="product-review">
-                                                    <h5 class="manufacturer"><a href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
+                                                    <h5 class="manufacturer"><a
+                                                            href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
@@ -1203,14 +1422,21 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box"><span class="new-price">$46.80</span></div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1221,13 +1447,15 @@
                                     <!-- single-product-wrap start -->
                                     <div class="single-product-wrap">
                                         <div class="product-image">
-                                            <a href="./pages/products/single-product.html"><img src="images/product/large-size/2.jpg" alt="Li's Product Image"></a>
+                                            <a href="./pages/products/single-product.html"><img
+                                                    src="images/product/large-size/2.jpg" alt="Li's Product Image"></a>
                                             <span class="sticker">New</span>
                                         </div>
                                         <div class="product_desc">
                                             <div class="product_desc_info">
                                                 <div class="product-review">
-                                                    <h5 class="manufacturer"><a href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
+                                                    <h5 class="manufacturer"><a
+                                                            href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
@@ -1238,7 +1466,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -1247,9 +1477,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1260,13 +1495,15 @@
                                     <!-- single-product-wrap start -->
                                     <div class="single-product-wrap">
                                         <div class="product-image">
-                                            <a href="./pages/products/single-product.html"><img src="images/product/large-size/3.jpg" alt="Li's Product Image"></a>
+                                            <a href="./pages/products/single-product.html"><img
+                                                    src="images/product/large-size/3.jpg" alt="Li's Product Image"></a>
                                             <span class="sticker">New</span>
                                         </div>
                                         <div class="product_desc">
                                             <div class="product_desc_info">
                                                 <div class="product-review">
-                                                    <h5 class="manufacturer"><a href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
+                                                    <h5 class="manufacturer"><a
+                                                            href="./pages/shop-left-sidebar.html">Name Premium</a></h5>
                                                     <div class="rating-box">
                                                         <ul class="rating">
                                                             <li><i class="fa fa-star-o"></i></li>
@@ -1277,16 +1514,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1318,7 +1562,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -1327,9 +1573,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1361,16 +1612,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1402,7 +1660,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -1411,9 +1671,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1480,8 +1745,11 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
                                                     <li><a href="#" title="quick view" class="quick-view-btn"
                                                             data-toggle="modal" data-target="#exampleModalCenter"><i
                                                                 class="fa fa-eye"></i></a></li>
@@ -1527,8 +1795,11 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
                                                     <li><a href="#" title="quick view" class="quick-view-btn"
                                                             data-toggle="modal" data-target="#exampleModalCenter"><i
                                                                 class="fa fa-eye"></i></a></li>
@@ -1572,8 +1843,11 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
                                                     <li><a href="#" title="quick view" class="quick-view-btn"
                                                             data-toggle="modal" data-target="#exampleModalCenter"><i
                                                                 class="fa fa-eye"></i></a></li>
@@ -1619,8 +1893,11 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
                                                     <li><a href="#" title="quick view" class="quick-view-btn"
                                                             data-toggle="modal" data-target="#exampleModalCenter"><i
                                                                 class="fa fa-eye"></i></a></li>
@@ -1664,8 +1941,11 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
                                                     <li><a href="#" title="quick view" class="quick-view-btn"
                                                             data-toggle="modal" data-target="#exampleModalCenter"><i
                                                                 class="fa fa-eye"></i></a></li>
@@ -1711,8 +1991,11 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
                                                     <li><a href="#" title="quick view" class="quick-view-btn"
                                                             data-toggle="modal" data-target="#exampleModalCenter"><i
                                                                 class="fa fa-eye"></i></a></li>
@@ -1817,8 +2100,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -1870,8 +2155,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -1921,8 +2208,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -1974,8 +2263,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2025,8 +2316,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2078,8 +2371,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2135,8 +2430,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2188,8 +2485,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2239,8 +2538,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2292,8 +2593,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2343,8 +2646,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2396,8 +2701,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2453,8 +2760,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2506,8 +2815,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2557,8 +2868,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2610,8 +2923,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2661,8 +2976,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2714,8 +3031,10 @@
                                                     </div>
                                                     <div class="add-actions">
                                                         <ul class="add-actions-link">
-                                                            <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                            <li><a class="links-details" href="./pages/products/single-product.html"><i
+                                                            <li class="add-cart active"><a
+                                                                    href="https://wa.link/oy2jsj">Inquiry Now</a></li>
+                                                            <li><a class="links-details"
+                                                                    href="./pages/products/single-product.html"><i
                                                                         class="fa fa-heart-o"></i></a></li>
                                                             <li><a href="#" title="quick view" class="quick-view-btn"
                                                                     data-toggle="modal"
@@ -2774,16 +3093,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -2815,7 +3141,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -2824,9 +3152,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -2858,16 +3191,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -2899,7 +3239,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -2908,9 +3250,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -2942,16 +3289,23 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price">$46.80</span>
                                                 </div>
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -2983,7 +3337,9 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <h4><a class="product_name" href="./pages/products/single-product.html">Nameplate 001</a></h4>
+                                                <h4><a class="product_name"
+                                                        href="./pages/products/single-product.html">Nameplate 001</a>
+                                                </h4>
                                                 <div class="price-box">
                                                     <span class="new-price new-price-2">$71.80</span>
                                                     <span class="old-price">$77.22</span>
@@ -2992,9 +3348,14 @@
                                             </div>
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
-                                                    <li class="add-cart active"><a href="#">Inquiry Now</a></li>
-                                                    <li><a class="links-details" href="./pages/products/single-product.html"> <i class="fa fa-info"></i></a></li>
-                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
+                                                    <li class="add-cart active"><a href="https://wa.link/oy2jsj" target="_blank">Inquiry
+                                                            Now</a></li>
+                                                    <li><a class="links-details"
+                                                            href="./pages/products/single-product.html"> <i
+                                                                class="fa fa-info"></i></a></li>
+                                                    <li><a href="#" title="quick view" class="quick-view-btn"
+                                                            data-toggle="modal" data-target="#exampleModalCenter"><i
+                                                                class="fa fa-eye"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -3134,26 +3495,33 @@
                                     <h3 class="footer-block-title">Follow Us</h3>
                                     <ul class="social-link">
                                         <li class="twitter">
-                                            <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://twitter.com/" data-toggle="tooltip" target="_blank"
+                                                title="Twitter"><i class="fa fa-twitter"></i></a>
                                         </li>
                                         <li class="facebook">
-                                            <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                            <a href="https://www.facebook.com/" data-toggle="tooltip" target="_blank"
+                                                title="Facebook"><i class="fa fa-facebook"></i></a>
                                         </li>
                                         <li class="youtube">
-                                            <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank" title="Youtube"><i class="fa fa-youtube"></i></a>
+                                            <a href="https://www.youtube.com/" data-toggle="tooltip" target="_blank"
+                                                title="Youtube"><i class="fa fa-youtube"></i></a>
                                         </li>
                                         <li class="instagram">
-                                            <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank"  title="Instagram"><i class="fa fa-instagram"></i></a>
+                                            <a href="https://www.instagram.com/" data-toggle="tooltip" target="_blank"
+                                                title="Instagram"><i class="fa fa-instagram"></i></a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- Begin Footer Newsletter Area -->
                                 <div class="footer-newsletter">
                                     <h4>Sign up to newsletter</h4>
-                                    <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate>
+                                    <form action="#" method="post" id="mc-embedded-subscribe-form"
+                                        name="mc-embedded-subscribe-form" class="footer-subscribe-form validate"
+                                        target="_blank" novalidate>
                                         <div id="mc_embed_signup_scroll">
                                             <div id="mc-form" class="mc-form subscribe-form form-group">
-                                                <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email" />
+                                                <input id="mc-email" type="email" autocomplete="off"
+                                                    placeholder="Enter your email" />
                                                 <button class="btn" id="mc-submit">Subscribe</button>
                                             </div>
                                         </div>
@@ -3196,10 +3564,12 @@
                             </div>
                             <!-- Footer Links Area End Here -->
                             <!-- Begin Footer Payment Area -->
-                            <div class="copyright text-center"><a href="#"><img src="images/payment/1.png" alt=""></a></div>
+                            <div class="copyright text-center"><a href="#"><img src="images/payment/1.png" alt=""></a>
+                            </div>
                             <!-- Footer Payment Area End Here -->
                             <!-- Begin Copyright Area -->
-                            <div class="copyright text-center pt-25"><span><a href="index.html">WOWNameplates</a></span></div>
+                            <div class="copyright text-center pt-25"><span><a href="index.html">WOWNameplates</a></span>
+                            </div>
                             <!-- Copyright Area End Here -->
                         </div>
                     </div>
@@ -3221,19 +3591,32 @@
                                 <!-- Product Details Left -->
                                 <div class="product-details-left">
                                     <div class="product-details-images slider-navigation-1">
-                                        <div class="lg-image"><img src="images/product/large-size/1.jpg" alt="product image"></div>
-                                        <div class="lg-image"><img src="images/product/large-size/2.jpg" alt="product image"></div>
-                                        <div class="lg-image"><img src="images/product/large-size/3.jpg" alt="product image"></div>
-                                        <div class="lg-image"><img src="images/product/large-size/4.jpg" alt="product image"></div>
-                                        <div class="lg-image"><img src="images/product/large-size/5.jpg" alt="product image"></div>
-                                        <div class="lg-image"><img src="images/product/large-size/6.jpg" alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/1.jpg"
+                                                alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/2.jpg"
+                                                alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/3.jpg"
+                                                alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/4.jpg"
+                                                alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/5.jpg"
+                                                alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/6.jpg"
+                                                alt="product image"></div>
                                     </div>
-                                    <div class="product-details-thumbs slider-thumbs-1"><div class="sm-image"><img src="images/product/small-size/1.jpg" alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/small-size/2.jpg" alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/small-size/3.jpg" alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/small-size/4.jpg" alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/small-size/5.jpg" alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/small-size/6.jpg" alt="product image thumb"></div>
+                                    <div class="product-details-thumbs slider-thumbs-1">
+                                        <div class="sm-image"><img src="images/product/small-size/1.jpg"
+                                                alt="product image thumb"></div>
+                                        <div class="sm-image"><img src="images/product/small-size/2.jpg"
+                                                alt="product image thumb"></div>
+                                        <div class="sm-image"><img src="images/product/small-size/3.jpg"
+                                                alt="product image thumb"></div>
+                                        <div class="sm-image"><img src="images/product/small-size/4.jpg"
+                                                alt="product image thumb"></div>
+                                        <div class="sm-image"><img src="images/product/small-size/5.jpg"
+                                                alt="product image thumb"></div>
+                                        <div class="sm-image"><img src="images/product/small-size/6.jpg"
+                                                alt="product image thumb"></div>
                                     </div>
                                 </div>
                                 <!--// Product Details Left -->
@@ -3249,10 +3632,9 @@
                                                 <li><i class="fa fa-star-o"></i></li>
                                                 <li><i class="fa fa-star-o"></i></li>
                                                 <li><i class="fa fa-star-o"></i></li>
+                                                <li><i class="fa fa-star-o"></i></li>
                                                 <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                <li class="review-item"><a href="#">Read Review</a></li>
-                                                <li class="review-item"><a href="#">Write Review</a></li>
+
                                             </ul>
                                         </div>
                                         <div class="price-box pt-20">
@@ -3271,7 +3653,8 @@
                                             <div class="produt-variants-size">
                                                 <label>Dimension</label>
                                                 <select class="nice-select">
-                                                    <option value="1" title="S" selected="selected">40x60 Inches</option>
+                                                    <option value="1" title="S" selected="selected">40x60 Inches
+                                                    </option>
                                                     <option value="2" title="M">60x90 Inches</option>
                                                     <option value="3" title="L">80x120 Inches</option>
                                                 </select>
@@ -3282,8 +3665,10 @@
                                                 <div class="quantity">
                                                     <label>Quantity</label>
                                                     <div class="cart-plus-minus">
-                                                        <input class="cart-plus-minus-box" value="1" type="text" id="quantity">
-                                                        <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                                        <input class="cart-plus-minus-box" value="1" type="text"
+                                                            id="quantity">
+                                                        <div class="dec qtybutton"><i class="fa fa-angle-down"></i>
+                                                        </div>
                                                         <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
                                                     </div>
                                                 </div>
@@ -3291,12 +3676,14 @@
                                             </form>
                                         </div>
                                         <div class="product-additional-info pt-25">
-                                            <a class="wishlist-btn" href="./pages/products/single-product.html"><i class="fa fa-heart-o"></i>Add to wishlist</a>
                                             <div class="product-social-sharing pt-25">
                                                 <ul>
-                                                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-                                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-                                                    <li class="instagram"><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+                                                    <li class="facebook"><a href="#"><i
+                                                                class="fa fa-facebook"></i>Facebook</a></li>
+                                                    <li class="twitter"><a href="#"><i
+                                                                class="fa fa-twitter"></i>Twitter</a></li>
+                                                    <li class="instagram"><a href="#"><i
+                                                                class="fa fa-instagram"></i>Instagram</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -3322,14 +3709,23 @@
                                 <!-- Product Details Left -->
                                 <div class="product-details-left">
                                     <div class="product-details-images slider-navigation-1">
-                                        <div class="lg-image"><img src="images/product/large-size/1.jpg" alt="product image"></div>
-                                        <div class="lg-image"><img src="images/product/large-size/product-details/1.jpg" alt="product image"></div>
-                                        <div class="lg-image"><img src="images/product/large-size/product-details/info.jpg" alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/1.jpg"
+                                                alt="product image"></div>
+                                        <div class="lg-image"><img src="images/product/large-size/product-details/1.jpg"
+                                                alt="product image"></div>
+                                        <div class="lg-image"><img
+                                                src="images/product/large-size/product-details/info.jpg"
+                                                alt="product image"></div>
 
                                     </div>
-                                    <div class="product-details-thumbs slider-thumbs-1"><div class="sm-image"><img src="images/product/small-size/1.jpg" alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/small-size/product-details/1.jpg" alt="product image thumb"></div>
-                                        <div class="sm-image"><img src="images/product/small-size/product-details/info.jpg" alt="product image thumb"></div>
+                                    <div class="product-details-thumbs slider-thumbs-1">
+                                        <div class="sm-image"><img src="images/product/small-size/1.jpg"
+                                                alt="product image thumb"></div>
+                                        <div class="sm-image"><img src="images/product/small-size/product-details/1.jpg"
+                                                alt="product image thumb"></div>
+                                        <div class="sm-image"><img
+                                                src="images/product/small-size/product-details/info.jpg"
+                                                alt="product image thumb"></div>
 
                                     </div>
                                 </div>
@@ -3339,8 +3735,9 @@
                             <div class="col-lg-7 col-md-6 col-sm-6">
                                 <div class="product-details-view-content pt-60">
                                     <div class="product-info">
-                                        <h2 id="name">Today is a good day Framed poster</h2>
-                                        <span class="product-details-ref">Reference: demo_15</span>
+                                        <h2 id="name">Gleaming Gold Nameplate with Bold 3D Black Letters</h2>
+                                        <span class="product-details-ref">Size : 12x24 Inches</span>
+                                        <span class="product-details-ref">Acrylic Nameplate</span>
                                         <div class="rating-box pt-20">
                                             <ul class="rating rating-with-review-item">
                                                 <li><i class="fa fa-star-o"></i></li>
@@ -3348,19 +3745,31 @@
                                                 <li><i class="fa fa-star-o"></i></li>
                                                 <li class="no-star"><i class="fa fa-star-o"></i></li>
                                                 <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                <li class="review-item"><a href="#">Read Review</a></li>
-                                                <li class="review-item"><a href="#">Write Review</a></li>
+
+
                                             </ul>
                                         </div>
                                         <div class="price-box pt-20">
-                                            <span class="new-price new-price-2" id="price">₹57.98</span>
+                                            <span class="new-price new-price-2" id="price">₹4,320</span>
                                         </div>
                                         <div class="product-desc">
                                             <p>
-                                                <span>100% cotton double printed dress. Black and white striped top and
-                                                    orange high waisted skater skirt bottom. Lorem ipsum dolor sit amet,
-                                                    consectetur adipisicing elit. quibusdam corporis, earum facilis et
-                                                    nostrum dolorum accusamus similique eveniet quia pariatur.
+                                                <span>
+                                                    <div><strong>Product Details:</strong> Golden Base Design with matte
+                                                        Black Letters. Om Design is Engraved on it.</div>
+                                                    <div><strong>Material:</strong>Acrylic </div>
+                                                    <div><strong>Letter Format: </strong> 3D Letter with Engraved Design
+                                                    </div>
+                                                    <div><strong>Weather Proof :</strong>Yes </div>
+                                                    <div><strong>Lights:</strong> No </div>
+                                                    <div><strong>Category:</strong> Acrylic Nameplates </div>
+
+                                                    <div>
+                                                        <p>For customization of Your own <a
+                                                                href="https://wa.link/oy2jsj" target="_blank"><b>Click
+                                                                    Here.</b></a> </p>
+                                                    </div>
+
                                                 </span>
                                             </p>
                                         </div>
@@ -3368,8 +3777,9 @@
                                             <div class="produt-variants-size">
                                                 <label>Dimension</label>
                                                 <select class="nice-select" id="dimiensions" onchange="updatePrice()">
-                                                    <option value="10*20" title="S" >10x20 Inches</option>
-                                                    <option value="12*24" title="M" selected="selected">12x24 Inches</option>
+                                                    <option value="10*20" title="S">10x20 Inches</option>
+                                                    <option value="12*24" title="M" selected="selected">12x24 Inches
+                                                    </option>
                                                     <option value="15*30" title="L">15x30 Inches</option>
                                                 </select>
                                             </div>
@@ -3380,20 +3790,24 @@
                                                     <label>Quantity</label>
                                                     <div class="cart-plus-minus">
                                                         <input class="cart-plus-minus-box" value="1" type="text">
-                                                        <div class="dec qtybutton"><i class="fa fa-angle-down"></i></div>
+                                                        <div class="dec qtybutton"><i class="fa fa-angle-down"></i>
+                                                        </div>
                                                         <div class="inc qtybutton"><i class="fa fa-angle-up"></i></div>
                                                     </div>
                                                 </div>
-                                                <button class="add-to-cart whatsapp-button" type="button" id="whatsapp-button">Order on Whatsapp</button>
+                                                <button class="add-to-cart whatsapp-button" type="button"
+                                                    id="whatsapp-button">Order on Whatsapp</button>
                                             </form>
                                         </div>
                                         <div class="product-additional-info pt-25">
-                                            <a class="wishlist-btn" href="./pages/products/single-product.html"><i class="fa fa-heart-o"></i>Add to wishlist</a>
                                             <div class="product-social-sharing pt-25">
                                                 <ul>
-                                                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-                                                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-                                                    <li class="instagram"><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
+                                                    <li class="facebook"><a href="#"><i
+                                                                class="fa fa-facebook"></i>Facebook</a></li>
+                                                    <li class="twitter"><a href="#"><i
+                                                                class="fa fa-twitter"></i>Twitter</a></li>
+                                                    <li class="instagram"><a href="#"><i
+                                                                class="fa fa-instagram"></i>Instagram</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -3406,6 +3820,7 @@
             </div>
         </div>
         <!-- Quick View | Modal Area End Here -->
+
     </div>
     <!-- Body Wrapper End Here -->
     <!-- jQuery-V1.12.4 -->

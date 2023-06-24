@@ -3057,8 +3057,8 @@ text-align: center;
 	font-family: fontawesome;
 }
 .category-heading > h2 > i {
-	float: ;
-	text-align: ;
+	/* float: ;
+	text-align: ; */
 	float: right;
 	padding-right: 20px;
 	font-size: 12px;
@@ -3238,6 +3238,28 @@ li.right-menu .cat-mega-menu-2 > li {
 	height: 50px;
 	color: #a9a9a9;
 }
+
+/* #search-results{
+	background-color: #fff;
+	padding: 18px 24px 6px 12px;
+	border-radius: 0 0 6px 6px;
+	position: absolute;
+	width: 20%;
+	margin-top: 0px;
+	border: 2px solid #F27121;
+	border-top: none;
+	height: 50px;
+	overflow-y:scroll;
+
+}
+#search-results.hidden {
+	display: none;
+  }
+  
+  #search-results p {
+	margin-bottom: 12px;
+  } */
+
 /*----------------------------------------*/
 /*  04. Home Page Three
 /*----------------------------------------*/
