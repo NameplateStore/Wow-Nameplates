@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="eng">
 
 <!-- single-product-sale31:50-->
 
@@ -434,10 +434,11 @@
                                 <div class="product-variants">
                                     <div class="produt-variants-size">
                                         <label>Dimension</label>
-                                        <select class="nice-select">
-                                            <option value="1" title="S" selected="selected">40x60cm</option>
-                                            <option value="2" title="M">60x90cm</option>
-                                            <option value="3" title="L">80x120cm</option>
+                                        <select class="nice-select" id="dimiensions" onchange="updatePrice()">
+                                            <option value="10*20" title="S">10x20 Inches</option>
+                                            <option value="12*24" title="M" selected="selected">12x24 Inches
+                                            </option>
+                                            <option value="15*30" title="L">15x30 Inches</option>
                                         </select>
                                     </div>
                                 </div>
@@ -530,7 +531,7 @@
                     <div id="product-details" class="tab-pane" role="tabpanel">
                         <div class="product-details-manufacturer">
                             <a href="#">
-                                <img src="images/product-details/1.jpg" alt="Product Manufacturer Image">
+                                <img src="../../images/product/large-size/product-details/info.jpg" alt="Product Manufacturer Image">
                             </a>
                             <p><span>Reference</span> demo_7</p>
                             <p><span>Reference</span> demo_7</p>

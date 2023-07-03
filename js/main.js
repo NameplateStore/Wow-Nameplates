@@ -537,35 +537,59 @@
   /*----------------------------------------*/
   /* 27. Pricing update
 /*----------------------------------------*/
-
-// Get the select element
-
+// Function to update the price based on selected options and quantity
+// Function to update the price based on selected options and quantity
+// Function to update the price based on selected options and quantity
 function updatePrice() {
-  // Get the select element
-  const selectElement = document.getElementById('dimiensions');
+  const dimensionsSelect = document.getElementById('dimiensions');
+  const quantityInput = document.querySelector('.cart-plus-minus-box');
+  const priceElement = document.getElementById('quickViewPrice');
 
-  // Get the selected option value
-  const selectedOption = selectElement.value;
-  const [firstValue, secondValue] = selectedOption.split('*');
+  // Get the selected dimension and convert it to a number
+  const selectedDimension = dimensionsSelect.value;
+  const dimensionArray = selectedDimension.split('*');
+  const width = parseFloat(dimensionArray[0]) || 0;
+  const height = parseFloat(dimensionArray[1]) || 0;
 
-  // Get the selected option title
-  const selectedTitle = selectElement.options[selectElement.selectedIndex].getAttribute('title');
+  // Multiply the dimensions by 15 to calculate the price
+  const multipliedPrice = (width) * (height * 15);
 
-  // Calculate the price based on the selected option
-  const priceMultiplier = 15;
-  const price = parseFloat(firstValue) * parseFloat(secondValue) * priceMultiplier;
+  // Get the quantity and convert it to a number
+  const quantity = parseInt(quantityInput.value) || 0;
 
-  // Update the price
-  const priceElement = document.getElementById('price');
-  priceElement.textContent = `₹${price.toFixed(2)}`;
+  // Calculate the total price
+  const totalPrice = multipliedPrice * quantity;
 
-  // Update the default option title if needed
-  const defaultPriceElement = document.querySelector('.nice-select .current');
-
+  // Display the updated price
+  priceElement.textContent = '₹' + totalPrice.toFixed(2);
 }
 
-// Call the updatePrice function initially to set the initial price
-updatePrice();
+
+// Function to handle quantity change
+function handleQuantityChange(event) {
+  const quantityInput = document.querySelector('.cart-plus-minus-box');
+  const quantity = parseInt(quantityInput.value) || 0;
+
+  // Check if the clicked button is the increment or decrement button
+  if (event.target.classList.contains('dec')) {
+    // Decrease quantity by 1, minimum value is 1
+    if (quantity > 1) {
+      quantityInput.value = quantity - 1;
+    }
+  } else if (event.target.classList.contains('inc')) {
+    // Increase quantity by 1
+    quantityInput.value = quantity + 1;
+  }
+
+  // Update the price
+  updatePrice();
+}
+
+// Add event listeners to the plus and minus buttons
+const decButton = document.querySelector('.dec');
+const incButton = document.querySelector('.inc');
+decButton.addEventListener('click', handleQuantityChange);
+incButton.addEventListener('click', handleQuantityChange);
 
 
 
