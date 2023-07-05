@@ -143,3 +143,40 @@
           
         }
       </script>
+
+
+      <div class="countersection">
+        <div class="li-countdown product-sale-countdown"></div>
+    </div>
+
+
+
+    <!-- Review on Single Page  -->
+    <div id="reviews" class="tab-pane" role="tabpanel">
+        <div class="product-reviews">
+            <div class="product-details-comment-block">
+                <div class="comment-review">
+                    <span>Grade</span>
+                    <ul class="rating">
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li><i class="fa fa-star-o"></i></li>
+                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
+                <div class="comment-author-infos pt-25">
+                    <span>HTML 5</span>
+                    <em>01-12-18</em>
+                </div>
+                <div class="comment-details">
+                    <h4 class="title-block">Demo</h4>
+                    <p>Plaza</p>
+                </div>
+                <div class="review-btn">
+                    <a class="review-links" href="#" data-toggle="modal" data-target="#mymodal">Write
+                        Your Review!</a>
+                </div>
+            </div>
+        </div>
+    </div>

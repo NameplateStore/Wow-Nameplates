@@ -263,7 +263,7 @@ button.li-btn {
 	cursor: pointer;
 }
 button.li-btn:hover {
-	background: #333333;
+	background: #259cec;
 	color: #ffffff;
 }
 a.links, 
@@ -1514,7 +1514,7 @@ textarea:focus {
 	transition: all 0.3s ease-in-out;
 }
 .hm-wishlist > a:hover {
-	border-color: #fed700;
+	border-color: #259cec;
 	color: #fed700;
 }
 /*Header Middle Minicart*/

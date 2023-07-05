@@ -552,7 +552,7 @@ function updatePrice() {
   const height = parseFloat(dimensionArray[1]) || 0;
 
   // Multiply the dimensions by 15 to calculate the price
-  const multipliedPrice = (width) * (height * 15);
+  const multipliedPrice = width * height * 15;
 
   // Get the quantity and convert it to a number
   const quantity = parseInt(quantityInput.value) || 0;
