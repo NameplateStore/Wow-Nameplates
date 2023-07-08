@@ -533,21 +533,20 @@
   new WOW().init();
 })(jQuery);
 
-
-  /*----------------------------------------*/
-  /* 27. Pricing update
+/*----------------------------------------*/
+/* 27. Pricing update
 /*----------------------------------------*/
 // Function to update the price based on selected options and quantity
 // Function to update the price based on selected options and quantity
 // Function to update the price based on selected options and quantity
 function updatePrice() {
-  const dimensionsSelect = document.getElementById('dimiensions');
-  const quantityInput = document.querySelector('.cart-plus-minus-box');
-  const priceElement = document.getElementById('quickViewPrice');
+  const dimensionsSelect = document.getElementById("dimiensions");
+  const quantityInput = document.querySelector(".cart-plus-minus-box");
+  const priceElement = document.getElementById("price");
 
   // Get the selected dimension and convert it to a number
   const selectedDimension = dimensionsSelect.value;
-  const dimensionArray = selectedDimension.split('*');
+  const dimensionArray = selectedDimension.split("*");
   const width = parseFloat(dimensionArray[0]) || 0;
   const height = parseFloat(dimensionArray[1]) || 0;
 
@@ -561,22 +560,21 @@ function updatePrice() {
   const totalPrice = multipliedPrice * quantity;
 
   // Display the updated price
-  priceElement.textContent = '₹' + totalPrice.toFixed(2);
+  priceElement.textContent = "₹" + totalPrice.toFixed(2);
 }
-
 
 // Function to handle quantity change
 function handleQuantityChange(event) {
-  const quantityInput = document.querySelector('.cart-plus-minus-box');
+  const quantityInput = document.querySelector(".cart-plus-minus-box");
   const quantity = parseInt(quantityInput.value) || 0;
 
   // Check if the clicked button is the increment or decrement button
-  if (event.target.classList.contains('dec')) {
+  if (event.target.classList.contains("dec")) {
     // Decrease quantity by 1, minimum value is 1
     if (quantity > 1) {
       quantityInput.value = quantity - 1;
     }
-  } else if (event.target.classList.contains('inc')) {
+  } else if (event.target.classList.contains("inc")) {
     // Increase quantity by 1
     quantityInput.value = quantity + 1;
   }
@@ -586,48 +584,149 @@ function handleQuantityChange(event) {
 }
 
 // Add event listeners to the plus and minus buttons
-const decButton = document.querySelector('.dec');
-const incButton = document.querySelector('.inc');
-decButton.addEventListener('click', handleQuantityChange);
-incButton.addEventListener('click', handleQuantityChange);
+const decButton = document.querySelector(".dec");
+const incButton = document.querySelector(".inc");
+decButton.addEventListener("click", handleQuantityChange);
+incButton.addEventListener("click", handleQuantityChange);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*----------------------------------------*/
-  /* 27. Preview
+/*----------------------------------------*/
+/* 27. Quick View Order Buttons
 /*----------------------------------------*/
 
+// Function to show the quick view modal with dynamic content
+function showQuickView(
+  title,
+  size,
+  image1,
+  image2,
+  smimg1,
+  smimg2,
+  details,
+  Price,
+  Material,
+  Letter,
+  Weather,
+  Lights,
+  Category,
+  Productlink
+) {
+  const modalTitle = document.getElementById("quickViewTitle");
+  const modalSize = document.getElementById("quickViewSize");
+  const modalImage1 = document.getElementById("quickViewImage1");
+  const modalImage2 = document.getElementById("quickViewImage2");
+  const modalSmImage1 = document.getElementById("quickViewSmImage1");
+  const modalSmImage2 = document.getElementById("quickViewSmImage2");
+  const modalDetails = document.getElementById("quickViewDetails");
+  const modalPrice = document.getElementById("quickViewPrice");
+  const modalMaterial = document.getElementById("quickViewMaterial");
+  const modalLetter = document.getElementById("quickViewLetter");
+  const modalWeather = document.getElementById("quickViewWeather");
+  const modalLights = document.getElementById("quickViewLights");
+  const modalCategory = document.getElementById("quickViewCategory");
+  const modalProductLink = document.getElementById("quickViewProductLink");
+  modalTitle.textContent = title;
+  modalSize.textContent = "Size: " + size;
+  modalImage1.src = image1;
+  modalImage2.src = image2;
+  modalSmImage1.src = smimg1;
+  modalSmImage2.src = smimg2;
+  modalDetails.textContent = details;
+  modalPrice.textContent = Price;
+  modalMaterial.textContent = Material;
+  modalLetter.textContent = Letter;
+  modalWeather.textContent = Weather;
+  modalLights.textContent = Lights;
+  modalCategory.textContent = Category;
+  modalProductLink.href = Productlink;
+}
+document
+  .getElementById("whatsapp-button")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
 
+    // Get product details from the respective elements
+    var productTitle = document.getElementById("quickViewTitle").textContent;
+    var productSize = document.getElementById("quickViewSize").textContent;
+    var productLink = document
+      .getElementById("quickViewProductLink")
+      .getAttribute("href");
 
+    // Generate the WhatsApp message
+    var message =
+      "Hello, I would like to order the following product from your store:\n\n" +
+      "Product Title: " +
+      productTitle +
+      "\n" +
+      "Product Size: " +
+      productSize +
+      "\n" +
+      "Product Link: " +
+      productLink +
+      "\n";
 
+    // Encode the message for the WhatsApp URL
+    var encodedMessage = encodeURIComponent(message);
 
+    // Generate the WhatsApp link
+    var whatsappLink =
+      "https://api.whatsapp.com/send?phone=919355776077&text=" + encodedMessage;
 
+    // Open the WhatsApp link in a new tab
+    window.open(whatsappLink, "_blank");
+  });
+document
+  .getElementById("order-button")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default link behavior
 
+    // Get product details from the respective elements
+    var productTitle = document.getElementById("title").textContent;
+    const dimensionsSelect = document.getElementById("dimiensions");
+    // Get the selected dimension and convert it to a number
+    const selectedDimension = dimensionsSelect.value;
+    const dimensionArray = selectedDimension.split("*");
+    const width = parseFloat(dimensionArray[0]) || 0;
+    const height = parseFloat(dimensionArray[1]) || 0;
+    const productSize = width + " and " + height + " Inches";
+    var productLink = window.location.href;
+    const quantityInput = document.querySelector(".cart-plus-minus-box");
+    const productPrice = document.getElementById("price").textContent;
+    // Get the quantity and convert it to a number
+    const quantity = parseInt(quantityInput.value) || 0;
 
+    // Generate the WhatsApp message
+    var message =
+      "Hello, I would like to order the following product from your store:\n\n" +
+      "Product Title: " +
+      productTitle +
+      "\n" +
+      "Product Size: " +
+      productSize +
+      "\n" +
+      "Product Price: " +
+      productPrice +
+      "\n" +
+      "Number of Nameplates: " +
+      quantity +
+      "\n" +
+      "Product Link: " +
+      productLink +
+      "\n";
 
+    // Encode the message for the WhatsApp URL
+    var encodedMessage = encodeURIComponent(message);
 
+    // Generate the WhatsApp link
+    var whatsappLink =
+      "https://api.whatsapp.com/send?phone=919355776077&text=" + encodedMessage;
 
+    // Open the WhatsApp link in a new tab
+    window.open(whatsappLink, "_blank");
+  });
 
-
-
-
-
-
-  /*----------------------------------------*/
-  /* 27. SearchBox
 /*----------------------------------------*/
-
+/* 27. SearchBox
+/*----------------------------------------*/
 
 // const searchBox = document.getElementById('search-box');
 //     const searchResults = document.getElementById('search-results');
@@ -654,7 +753,6 @@ incButton.addEventListener('click', handleQuantityChange);
 //     });
 // // Assuming you have a search input field with the ID "search-input"
 // var searchInput = document.getElementById('search-box');
-
 
 // searchInput.addEventListener('input', function() {
 //   if (searchInput.value === "") {
