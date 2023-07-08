@@ -1930,7 +1930,7 @@ textarea:focus {
 }
 /*Sticky*/
 .header-sticky.sticky {
-	background: rgba(254,215,0,.8);
+	background: rgb(254 215 0 / 88%);;
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -2658,6 +2658,11 @@ textarea:focus {
 	background-size: cover;
 	height: 400px;
 	background-repeat: no-repeat;
+}
+@media only screen and (max-width: 600px) {
+	.li-static-home-image{
+		display: none;
+	}
 }
 .li-static-home-content {
 	padding-left: 75px;
