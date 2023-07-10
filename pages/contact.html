@@ -52,7 +52,6 @@
     <div class="body-wrapper">
         <!-- Begin Header Area -->
         <header>
-
             <!-- Begin Header Middle Area -->
             <div class="header-middle pl-sm-0 pr-sm-0 pl-xs-0 pr-xs-0">
                 <div class="container">
@@ -61,27 +60,24 @@
                         <div class="col-lg-3">
                             <div class="logo pb-sm-30 pb-xs-30">
                                 <a href="../index.html">
-                                    <img src="../images/logo/3.png" alt="WOWNameplates">
+                                    <img src="./images/logo/3.png" alt="WOWNameplates">
                                 </a>
                             </div>
                         </div>
                         <!-- Header Logo Area End Here -->
                         <!-- Begin Header Middle Right Area -->
-                        <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
-                            <!-- Begin Header Middle Searchbox Area -->
-                            <form action="#" class="hm-searchbox">
-                                <select class="nice-select select-search-category">
-                                    <option value="0">All</option>
-
-                                </select>
-                                <input type="text" placeholder="Enter your search key ...">
-                                <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                            <!-- Header Middle Searchbox Area End Here -->
-                            <!-- Begin Header Middle Right Area -->
-                            <div class="header-middle-right">
-                                <ul class="hm-menu">
-                                    <!-- Begin Header Middle Wishlist Area -->
+                        <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15 container">
+                            <section class="containersearch">
+                                <form action="#" class="hm-searchbox">
+                                    <select class="nice-select select-search-category">
+                                        <option value="0">All</option>
+                                    </select>
+                                    <input type="text" placeholder="Enter your search key ..." id="search-box"
+                                        onkeyup="searchNameplates()">
+                                    <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
+                                    
+                                </form>
+                                <div class="header-middle-right">
                                     <ul class="hm-menu">
                                         <!-- Begin Header Middle Wishlist Area -->
                                         <li class="hm-wishlist">
@@ -89,27 +85,45 @@
                                                 <i class="fa fa-whatsapp"></i>
                                             </a>
                                         </li>
-                                        <li class="hm-wishlist">
-                                            <a href=""> <!--Youtube link-->
-                                                <i class="fa fa-youtube-play"></i>
-                                            </a>
-                                        </li>
-                                        <li class="hm-wishlist">
-                                            <a href=""> <!--twitter link-->
-                                                <i class="fa fa-twitter-square"></i>
-                                            </a>
-                                        </li>
                                         <!-- Header Middle Area End Here -->
-
                                     </ul>
-                                    <!-- Header Middle Wishlist Area End Here -->
+                                </div>
+                                <div class="product-list" id="product-list">
+                                    <div id="search-results">
+                                        <h6><a href="./category/acrylicnameplate.html">Acrylic nameplate</a></h6>
+                                        <h6><a href="./category/woodennameplate.html">Wooden nameplate</a></h6>
+                                        <h6><a href="./category/lednameplate.html">Led nameplate</a></h6>
+                                        <h6><a href="./category/metalnameplate.html">Metal nameplate</a></h6>
+                                        <h6><a href="./category/professionalnameplate.html">Professional nameplate</a></h6>
+                                        <h6><a href="./category/classicalnameplate.html">Classic nameplate</a></h6>
+                                        <h6><a href="./category/personalizednameplate.html">Personalized nameplate</a></h6>
+                                        <h6><a href="./category/nobletitlenameplate.html">Noble title nameplate</a></h6>
+                                        <h6><a href="./category/royalnameplate.html">Royal nameplate</a></h6>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- Begin Header Middle Searchbox Area -->
 
-                                </ul>
-                            </div>
+
+                            <!-- Header Middle Searchbox Area End Here -->
+                            <!-- Begin Header Middle Right Area -->
+                          
                             <!-- Header Middle Right Area End Here -->
                         </div>
+
                         <!-- Header Middle Right Area End Here -->
                     </div>
+                </div>
+                <div id="search-results">
+                    <h6><a href="">Acrylic nameplate</a></h6>
+                    <h6><a href="">Wooden nameplate</a></h6>
+                    <h6><a href="">Led nameplate</a></h6>
+                    <h6><a href="">Metal nameplate</a></h6>
+                    <h6><a href="">Professional nameplate</a></h6>
+                    <h6><a href="">Classic nameplate</a></h6>
+                    <h6><a href="">Personalized nameplate</a></h6>
+                    <h6><a href="">Noble title nameplate</a></h6>
+                    <h6><a href="">Royal nameplate</a></h6>
                 </div>
             </div>
             <!-- Header Middle Area End Here -->

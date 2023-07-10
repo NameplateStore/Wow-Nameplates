@@ -47,9 +47,7 @@
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+  
     <!-- Begin Body Wrapper -->
     <div class="body-wrapper">
         <!-- Begin Header Area -->
@@ -68,44 +66,64 @@
                         </div>
                         <!-- Header Logo Area End Here -->
                         <!-- Begin Header Middle Right Area -->
-                        <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15">
+                        <div class="col-lg-9 pl-0 ml-sm-15 ml-xs-15 container">
+                            <section class="containersearch">
+                                <form action="#" class="hm-searchbox">
+                                    <select class="nice-select select-search-category">
+                                        <option value="0">All</option>
+                                    </select>
+                                    <input type="text" placeholder="Enter your search key ..." id="search-box"
+                                        onkeyup="searchNameplates()">
+                                    <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
+                                    
+                                </form>
+                                <div class="header-middle-right">
+                                    <ul class="hm-menu">
+                                        <!-- Begin Header Middle Wishlist Area -->
+                                        <li class="hm-wishlist">
+                                            <a href=""> <!--Whatsapp link-->
+                                                <i class="fa fa-whatsapp"></i>
+                                            </a>
+                                        </li>
+                                        <!-- Header Middle Area End Here -->
+                                    </ul>
+                                </div>
+                                <div class="product-list" id="product-list">
+                                    <div id="search-results">
+                                        <h6><a href="./pages/category/acrylicnameplate.html">Acrylic nameplate</a></h6>
+                                        <h6><a href="./pages/category/woodennameplate.html">Wooden nameplate</a></h6>
+                                        <h6><a href="./pages/category/lednameplate.html">Led nameplate</a></h6>
+                                        <h6><a href="./pages/category/metalnameplate.html">Metal nameplate</a></h6>
+                                        <h6><a href="./pages/category/professionalnameplate.html">Professional nameplate</a></h6>
+                                        <h6><a href="./pages/category/classicalnameplate.html">Classic nameplate</a></h6>
+                                        <h6><a href="./pages/category/personalizednameplate.html">Personalized nameplate</a></h6>
+                                        <h6><a href="./pages/category/nobletitlenameplate.html">Noble title nameplate</a></h6>
+                                        <h6><a href="./pages/category/royalnameplate.html">Royal nameplate</a></h6>
+                                    </div>
+                                </div>
+                            </section>
                             <!-- Begin Header Middle Searchbox Area -->
-                            <form action="#" class="hm-searchbox">
-                                <select class="nice-select select-search-category">
-                                    <option value="0">All</option>
-                                </select>
-                                <input type="text" placeholder="Enter your search key ..." id="search-box">
 
-                                <button class="li-btn" type="submit"><i class="fa fa-search"></i></button>
-                            </form>
+
                             <!-- Header Middle Searchbox Area End Here -->
                             <!-- Begin Header Middle Right Area -->
-                            <div class="header-middle-right">
-                                <ul class="hm-menu">
-                                    <!-- Begin Header Middle Wishlist Area -->
-                                    <li class="hm-wishlist">
-                                        <a href=""> <!--Whatsapp link-->
-                                            <i class="fa fa-whatsapp"></i>
-                                        </a>
-                                    </li>
-                                    <li class="hm-wishlist">
-                                        <a href=""> <!--Youtube link-->
-                                            <i class="fa fa-youtube-play"></i>
-                                        </a>
-                                    </li>
-                                    <li class="hm-wishlist">
-                                        <a href=""> <!--twitter link-->
-                                            <i class="fa fa-twitter-square"></i>
-                                        </a>
-                                    </li>
-                                    <!-- Header Middle Area End Here -->
-                                </ul>
-                            </div>
+                          
                             <!-- Header Middle Right Area End Here -->
                         </div>
-                        <!-- <div id="search-results"></div> -->
+
                         <!-- Header Middle Right Area End Here -->
                     </div>
+                </div>
+                <div id="search-results">
+                    <h6><a href="">Acrylic nameplate</a></h6>
+                    <h6><a href="">Wooden nameplate</a></h6>
+                    <h6><a href="">Led nameplate</a></h6>
+                    <h6><a href="">Metal nameplate</a></h6>
+                    <h6><a href="">Professional nameplate</a></h6>
+                    <h6><a href="">Classic nameplate</a></h6>
+                    <h6><a href="">Personalized nameplate</a></h6>
+                    <h6><a href="">Noble title nameplate</a></h6>
+                    <h6><a href="">Royal nameplate</a></h6>
                 </div>
             </div>
             <!-- Header Middle Area End Here -->
@@ -251,7 +269,8 @@
                     <div class="col-lg-12">
                         <div class="li-product-tab">
                             <ul class="nav li-product-menu">
-                                <li><a class="active" data-toggle="tab" href="#li-new-product"><span>New Arrival</span></a></li>
+                                <li><a class="active" data-toggle="tab" href="#li-new-product"><span>New
+                                            Arrival</span></a></li>
                                 <li><a data-toggle="tab" href="#li-bestseller-product"><span>Bestseller</span></a></li>
                                 <li><a data-toggle="tab" href="#li-featured-product"><span>Featured Products</span></a>
                                 </li>
@@ -291,7 +310,8 @@
                                                     </div>
                                                 </div>
                                                 <h4>
-                                                    <a class="product_name" href="./pages/products/Gleaming-Gold-Nameplate.html">
+                                                    <a class="product_name"
+                                                        href="./pages/products/Gleaming-Gold-Nameplate.html">
                                                         Gleaming Gold Nameplate with Bold 3D Black Letters
                                                     </a>
                                                 </h4>
@@ -305,7 +325,8 @@
                                             <div class="add-actions">
                                                 <ul class="add-actions-link">
                                                     <li class="add-cart active">
-                                                        <a href="https://wa.link/eirxbf" target="_blank">Inquiry Now</a></li>
+                                                        <a href="https://wa.link/eirxbf" target="_blank">Inquiry Now</a>
+                                                    </li>
                                                     <li>
                                                         <a class="links-details"
                                                             href="./pages/products/Gleaming-Gold-Nameplate.html">
@@ -2220,7 +2241,7 @@
                     <!-- Begin Li's Static Home Image Area -->
                     <div class="li-static-home-image"></div>
                     <!-- Li's Static Home Image Area End Here -->
-                  
+
                 </div>
             </div>
         </div>
@@ -3979,7 +4000,8 @@
                         </div>
                         <!-- Footer Links Area End Here -->
                         <!-- Begin Footer Payment Area -->
-                        <div class="copyright text-center"><a href="#"><img src="images/payment/1.png" alt="copyright"></a>
+                        <div class="copyright text-center"><a href="#"><img src="images/payment/1.png"
+                                    alt="copyright"></a>
                         </div>
                         <!-- Footer Payment Area End Here -->
                         <!-- Begin Copyright Area -->
@@ -4006,8 +4028,10 @@
                             <!-- Product Details Left -->
                             <div class="product-details-left">
                                 <div class="product-details-images slider-navigation-1">
-                                    <div class="lg-image"><img id="quickViewImage1" src="" alt="Nameplate store in noida"></div>
-                                    <div class="lg-image"><img id="quickViewImage2" src="" alt="Nameplate store in noida"></div>
+                                    <div class="lg-image"><img id="quickViewImage1" src=""
+                                            alt="Nameplate store in noida"></div>
+                                    <div class="lg-image"><img id="quickViewImage2" src=""
+                                            alt="Nameplate store in noida"></div>
                                     <div class="lg-image"><img src="images/product/large-size/product-details/info.jpg"
                                             alt="Nameplate store in noida"></div>
                                 </div>
@@ -4050,11 +4074,12 @@
                                         <p id="quickViewCategory"></p>
                                         <a href="" id="quickViewProductLink" class="d-none"></a>
                                     </div>
-                                   
+
                                     <div class="single-add-to-cart">
                                         <form action="#" class="cart-quantity">
-                                            
-                                            <a href="https://api.whatsapp.com/send?phone=919355776077&text=Hello%20I%20want%20to%20Order%20this%20Nameplate." class="add-to-cart whatsapp-button" type="button"
+
+                                            <a href="https://api.whatsapp.com/send?phone=919355776077&text=Hello%20I%20want%20to%20Order%20this%20Nameplate."
+                                                class="add-to-cart whatsapp-button" type="button"
                                                 id="whatsapp-button">Order on Whatsapp</a>
                                         </form>
                                     </div>
@@ -4128,7 +4153,7 @@
     <!-- quick view  -->
     <script>
         // Function to show the quick view modal with dynamic content
-        function showQuickView(title, size, image1, image2, smimg1, smimg2, details, Price, Material, Letter, Weather, Lights, Category , Productlink) {
+        function showQuickView(title, size, image1, image2, smimg1, smimg2, details, Price, Material, Letter, Weather, Lights, Category, Productlink) {
             const modalTitle = document.getElementById('quickViewTitle');
             const modalSize = document.getElementById('quickViewSize');
             const modalImage1 = document.getElementById('quickViewImage1');
@@ -4158,29 +4183,29 @@
             modalCategory.textContent = Category;
             modalProductLink.href = Productlink;
         }
-        document.getElementById("whatsapp-button").addEventListener("click", function(event) {
+        document.getElementById("whatsapp-button").addEventListener("click", function (event) {
             event.preventDefault(); // Prevent default link behavior
-        
+
             // Get product details from the respective elements
             var productTitle = document.getElementById("quickViewTitle").textContent;
             var productSize = document.getElementById("quickViewSize").textContent;
             var productLink = document.getElementById("quickViewProductLink").getAttribute("href");
-        
+
             // Generate the WhatsApp message
             var message = "Hello, I would like to order the following product from your store:\n\n" +
-              "Product Title: " + productTitle + "\n" +
-              "Product Size: " + productSize + "\n" +
-              "Product Link: " + productLink + "\n";
-        
+                "Product Title: " + productTitle + "\n" +
+                "Product Size: " + productSize + "\n" +
+                "Product Link: " + productLink + "\n";
+
             // Encode the message for the WhatsApp URL
             var encodedMessage = encodeURIComponent(message);
-        
+
             // Generate the WhatsApp link
             var whatsappLink = "https://api.whatsapp.com/send?phone=919355776077&text=" + encodedMessage;
-        
+
             // Open the WhatsApp link in a new tab
             window.open(whatsappLink, "_blank");
-          });
+        });
     </script>
 </body>
 

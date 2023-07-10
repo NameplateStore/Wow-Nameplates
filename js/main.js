@@ -728,39 +728,31 @@ document
 /* 27. SearchBox
 /*----------------------------------------*/
 
-// const searchBox = document.getElementById('search-box');
-//     const searchResults = document.getElementById('search-results');
+function searchNameplates() {
+  var input = document.getElementById('search-box').value.toLowerCase().trim();
+  var nameplates = document.getElementById('search-results').getElementsByTagName('h6');
 
-//     searchBox.addEventListener('input', function() {
-//       const searchTerm = searchBox.value.toLowerCase();
-//       const headings = document.querySelectorAll('h1, h2, h3, h4');
+  for (var i = 0; i < nameplates.length; i++) {
+    var nameplate = nameplates[i].innerText.toLowerCase();
 
-//       let results = '';
+    if (input !== '' && nameplate.includes(input)) {
+      nameplates[i].style.display = 'block'; // Show matching nameplates
+    } else {
+      nameplates[i].style.display = 'none'; // Hide non-matching nameplates
+    }
+  }
 
-//       headings.forEach(function(heading) {
-//         const headingText = heading.textContent.toLowerCase();
+  var searchResultsContainer = document.getElementById('search-results');
+  if (input !== '') {
+    searchResultsContainer.style.display = 'block'; // Show the search results container if there is a search query
+  } else {
+    searchResultsContainer.style.display = 'none'; // Hide the search results container if the search query is empty
+  }
+}
 
-//         if (headingText.includes(searchTerm)) {
-//           results += '<p>' + headingText + '</p>';
-//         }
-//       });
-
-//       if (searchTerm) {
-//         searchResults.innerHTML = results.length ? results : 'No results found.';
-//       } else {
-//         searchResults.innerHTML = '';
-//       }
-//     });
-// // Assuming you have a search input field with the ID "search-input"
-// var searchInput = document.getElementById('search-box');
-
-// searchInput.addEventListener('input', function() {
-//   if (searchInput.value === "") {
-//     searchResults.style.display = "none";
-//   } else {
-//     searchResults.style.display = "block";
-//   }
-// });
+window.addEventListener('load', function() {
+  document.getElementById('search-results').style.display = 'none'; // Hide the search results container on page load
+});
 /*----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------> The End <-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
