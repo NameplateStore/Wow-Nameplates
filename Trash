@@ -180,3 +180,382 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <!-- Begin Li's TV & Audio Product Area -->
+    <section class="product-area li-laptop-product li-tv-audio-product pb-45">
+        <div class="container">
+            <div class="row">
+                <!-- Begin Li's Section Area -->
+                <div class="col-lg-12">
+                    <div class="li-section-title">
+                        <h2>
+                            <span>Featured Nameplates</span>
+                        </h2>
+                        <ul class="li-sub-category-list">
+                            <li class="active"><a href="./pages/shop-left-sidebar.html">Premium</a></li>
+                            <li><a href="./pages/shop-left-sidebar.html">Designer</a></li>
+                            <li><a href="./pages/shop-left-sidebar.html">Glossy</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="product-active owl-carousel">
+                            <div class="col-lg-12">
+                                <!-- single-product-wrap start -->
+                                <div class="single-product-wrap">
+                                    <div class="product-image">
+                                        <a href="./pages/products/single-product.html">
+                                            <img src="images/product/large-size/13.jpg"
+                                                alt="Premium Logo Nameplate: White Cloudy Base with Striking 3D Letters for a Distinctive and High-Quality Appearance">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                    </div>
+                                    <div class="product_desc">
+                                        <div class="product_desc_info">
+                                            <div class="product-review">
+                                                <h5 class="manufacturer">
+                                                    <a href="./pages/shop-left-sidebar.html">Featured Nameplate</a>
+                                                </h5>
+                                                <div class="rating-box">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4><a class="product_name"
+                                                    href="./pages/products/single-product.html">Premium Logo
+                                                    Nameplate: White Cloudy Base with Striking 3D Letters for a
+                                                    Distinctive and High-Quality Appearance</a>
+                                            </h4>
+                                            <div class="price-box">
+                                                <span class="new-price size">Size:24x15 Inches</span>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="new-price">₹5,399</span>
+                                            </div>
+                                        </div>
+                                        <div class="add-actions">
+                                            <ul class="add-actions-link">
+                                                <li class="add-cart active"><a href="https://wa.link/eirxbf"
+                                                        target="_blank">Inquiry
+                                                        Now</a></li>
+                                                <li><a class="links-details"
+                                                        href="./pages/products/single-product.html"> <i
+                                                            class="fa fa-info"></i></a></li>
+                                                <li><a href="#" title="quick view" class="quick-view-btn"
+                                                        data-toggle="modal" data-target="#quickViewModal"><i
+                                                            class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-product-wrap end -->
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- single-product-wrap start -->
+                                <div class="single-product-wrap">
+                                    <div class="product-image">
+                                        <a href="./pages/products/single-product.html">
+                                            <img src="images/product/large-size/35.jpg"
+                                                alt="Premium Floral 3D Golden Nameplate: Matte Black Base with Exquisite Design for a Luxurious Touch">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                    </div>
+                                    <div class="product_desc">
+                                        <div class="product_desc_info">
+                                            <div class="product-review">
+                                                <h5 class="manufacturer">
+                                                    <a href="./pages/shop-left-sidebar.html">Featured Nameplate</a>
+                                                </h5>
+                                                <div class="rating-box">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4><a class="product_name"
+                                                    href="./pages/products/single-product.html">Premium Floral 3D
+                                                    Golden Nameplate: Matte Black Base with Exquisite Flower Design
+                                                    for a Luxurious Touch</a>
+                                            </h4>
+                                            <div class="price-box">
+                                                <span class="new-price size">Size:24x12 Inches</span>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="new-price new-price-2">₹4,449</span>
+                                                <span class="old-price">₹5,000</span>
+                                                <span class="discount-percentage">-10%</span>
+                                            </div>
+                                        </div>
+                                        <div class="add-actions">
+                                            <ul class="add-actions-link">
+                                                <li class="add-cart active"><a href="https://wa.link/eirxbf"
+                                                        target="_blank">Inquiry
+                                                        Now</a></li>
+                                                <li><a class="links-details"
+                                                        href="./pages/products/single-product.html"> <i
+                                                            class="fa fa-info"></i></a></li>
+                                                <li><a href="#" title="quick view" class="quick-view-btn"
+                                                        data-toggle="modal" data-target="#quickViewModal"><i
+                                                            class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-product-wrap end -->
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- single-product-wrap start -->
+                                <div class="single-product-wrap">
+                                    <div class="product-image">
+                                        <a href="./pages/products/single-product.html">
+                                            <img src="images/product/large-size/37.jpg" alt="nameplate in noida">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                    </div>
+                                    <div class="product_desc">
+                                        <div class="product_desc_info">
+                                            <div class="product-review">
+                                                <h5 class="manufacturer">
+                                                    <a href="./pages/shop-left-sidebar.html">Featured Nameplate</a>
+                                                </h5>
+                                                <div class="rating-box">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4><a class="product_name"
+                                                    href="./pages/products/single-product.html">Sacred OM Nameplate:
+                                                    White Base with Black Letters for a Premium and Spiritual
+                                                    Touch</a>
+                                            </h4>
+                                            <div class="price-box">
+                                                <span class="new-price size">Size:18x18 Inches</span>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="new-price">₹4,999</span>
+                                            </div>
+                                        </div>
+                                        <div class="add-actions">
+                                            <ul class="add-actions-link">
+                                                <li class="add-cart active"><a href="https://wa.link/eirxbf"
+                                                        target="_blank">Inquiry
+                                                        Now</a></li>
+                                                <li><a class="links-details"
+                                                        href="./pages/products/single-product.html"> <i
+                                                            class="fa fa-info"></i></a></li>
+                                                <li><a href="#" title="quick view" class="quick-view-btn"
+                                                        data-toggle="modal" data-target="#quickViewModal"><i
+                                                            class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-product-wrap end -->
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- single-product-wrap start -->
+                                <div class="single-product-wrap">
+                                    <div class="product-image">
+                                        <a href="./pages/products/single-product.html">
+                                            <img src="images/product/large-size/22.jpg"
+                                                alt="Premium Greyish Nameplate: Sophisticated Black Letters with a Sleek Touch">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                    </div>
+                                    <div class="product_desc">
+                                        <div class="product_desc_info">
+                                            <div class="product-review">
+                                                <h5 class="manufacturer">
+                                                    <a href="./pages/shop-left-sidebar.html">Name Premium</a>
+                                                </h5>
+                                                <div class="rating-box">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4><a class="product_name"
+                                                    href="./pages/products/single-product.html">Premium Greyish
+                                                    Nameplate: Sophisticated Black Letters with a Sleek Touch</a>
+                                            </h4>
+                                            <div class="price-box">
+                                                <span class="new-price size">Size:24x12 Inches</span>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="new-price new-price-2">₹5,399</span>
+                                                <span class="old-price">₹6,000</span>
+                                                <span class="discount-percentage">-10%</span>
+                                            </div>
+                                        </div>
+                                        <div class="add-actions">
+                                            <ul class="add-actions-link">
+                                                <li class="add-cart active"><a href="https://wa.link/eirxbf"
+                                                        target="_blank">Inquiry
+                                                        Now</a></li>
+                                                <li><a class="links-details"
+                                                        href="./pages/products/single-product.html"> <i
+                                                            class="fa fa-info"></i></a></li>
+                                                <li><a href="#" title="quick view" class="quick-view-btn"
+                                                        data-toggle="modal" data-target="#quickViewModal"><i
+                                                            class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-product-wrap end -->
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- single-product-wrap start -->
+                                <div class="single-product-wrap">
+                                    <div class="product-image">
+                                        <a href="./pages/products/single-product.html">
+                                            <img src="images/product/large-size/17.jpg"
+                                                alt="Artistic Designer Wooden Nameplate: Black 3D Letters on a Rustic Base">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                    </div>
+                                    <div class="product_desc">
+                                        <div class="product_desc_info">
+                                            <div class="product-review">
+                                                <h5 class="manufacturer">
+                                                    <a href="./pages/shop-left-sidebar.html">Featured Nameplates</a>
+                                                </h5>
+                                                <div class="rating-box">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4><a class="product_name"
+                                                    href="./pages/products/single-product.html">Artistic Designer
+                                                    Wooden Textured Nameplate: Black 3D Letters on a Rustic Base</a>
+                                            </h4>
+                                            <div class="price-box">
+                                                <span class="new-price size">Size:12x18 Inches</span>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="new-price">₹3,240</span>
+                                            </div>
+                                        </div>
+                                        <div class="add-actions">
+                                            <ul class="add-actions-link">
+                                                <li class="add-cart active"><a href="https://wa.link/eirxbf"
+                                                        target="_blank">Inquiry
+                                                        Now</a></li>
+                                                <li><a class="links-details"
+                                                        href="./pages/products/single-product.html"> <i
+                                                            class="fa fa-info"></i></a></li>
+                                                <li><a href="#" title="quick view" class="quick-view-btn"
+                                                        data-toggle="modal" data-target="#quickViewModal"><i
+                                                            class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-product-wrap end -->
+                            </div>
+                            <div class="col-lg-12">
+                                <!-- single-product-wrap start -->
+                                <div class="single-product-wrap">
+                                    <div class="product-image">
+                                        <a href="./pages/products/single-product.html"><img
+                                                src="images/product/large-size/12.jpg"
+                                                alt="Elegant Golden Om Nameplate for Home: Premium Black Base with Striking 3D Letters"></a>
+                                        <span class="sticker">New</span>
+                                    </div>
+                                    <div class="product_desc">
+                                        <div class="product_desc_info">
+                                            <div class="product-review">
+                                                <h5 class="manufacturer"><a href="./pages/shop-left-sidebar.html">Name
+                                                        Premium</a></h5>
+                                                <div class="rating-box">
+                                                    <ul class="rating">
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li class="no-star"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <h4><a class="product_name"
+                                                    href="./pages/products/single-product.html">Elegant Golden Om
+                                                    Nameplate: Premium Black Base with Striking 3D Letters</a>
+                                            </h4>
+                                            <div class="price-box">
+                                                <span class="new-price size">Size:20x12 Inches</span>
+                                            </div>
+                                            <div class="price-box">
+                                                <span class="new-price new-price-2">₹4,399</span>
+                                                <span class="old-price">₹5,000</span>
+                                                <span class="discount-percentage">-12%</span>
+                                            </div>
+                                        </div>
+                                        <div class="add-actions">
+                                            <ul class="add-actions-link">
+                                                <li class="add-cart active"><a href="https://wa.link/eirxbf"
+                                                        target="_blank">Inquiry
+                                                        Now</a></li>
+                                                <li><a class="links-details"
+                                                        href="./pages/products/single-product.html"> <i
+                                                            class="fa fa-info"></i></a></li>
+                                                <li><a href="#" title="quick view" class="quick-view-btn"
+                                                        data-toggle="modal" data-target="#quickViewModal"><i
+                                                            class="fa fa-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single-product-wrap end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Li's Section Area End Here -->
+            </div>
+        </div>
+    </section>
+    <!-- Li's TV & Audio Product Area End Here -->
+
+
+
+                                <!-- Begin Footer Newsletter Area -->
+                                <div class="footer-newsletter">
+                                    <h4>Sign up to newsletter</h4>
+                                    <form action="#" method="post" id="mc-embedded-subscribe-form"
+                                        name="mc-embedded-subscribe-form" class="footer-subscribe-form validate"
+                                        target="_blank" novalidate>
+                                        <div id="mc_embed_signup_scroll">
+                                            <div id="mc-form" class="mc-form subscribe-form form-group">
+                                                <input id="mc-email" type="email" autocomplete="off"
+                                                    placeholder="Enter your email" />
+                                                <button class="btn" id="mc-submit">Subscribe</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Footer Newsletter Area End Here -->

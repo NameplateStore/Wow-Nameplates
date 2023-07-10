@@ -681,7 +681,7 @@ Note: responsive.css, All Responsive CSS Style For This Theme Included In This F
 	}
 	/*Slider*/
 	.slider-content {
-		padding-left: 35px;
+		padding-left: 10px;
 	}
 	.slider-content > h2 {
 		font-size: 24px;
@@ -712,7 +712,7 @@ Note: responsive.css, All Responsive CSS Style For This Theme Included In This F
 		padding-top: 15px;
 	}
 	.li-product-menu > li > a > span {
-		font-size: 15px;
+		font-size: 13px;
 		line-height: 30px;
 	}
 	.li-product-menu > li > a span::before, .li-product-menu > li > a.active span::before {
