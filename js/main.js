@@ -687,7 +687,7 @@ document
     const dimensionArray = selectedDimension.split("*");
     const width = parseFloat(dimensionArray[0]) || 0;
     const height = parseFloat(dimensionArray[1]) || 0;
-    const productSize = width + " and " + height + " Inches";
+    const productSize = width + " x " + height + " Inches";
     var productLink = window.location.href;
     const quantityInput = document.querySelector(".cart-plus-minus-box");
     const productPrice = document.getElementById("price").textContent;
